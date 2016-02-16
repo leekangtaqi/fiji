@@ -16,7 +16,7 @@ gulp.task('frontend-ts', function() {
                .pipe(gulp.dest('./web/build'));
 });
 
-gulp.task('build', ['frontend-ts', 'backend-ts'], function() {
+gulp.task('build', ['backend-ts'], function() {
     console.log('build ok');
     // return gulp.watch(['./src/app.ts'], ['compile-ts']);
 });
